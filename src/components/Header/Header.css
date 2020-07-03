@@ -1,0 +1,23 @@
+.header {
+  width: 100%;
+  height: auto;
+  background-color: black;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.header-content {
+  max-width: 1280px;
+  height: 100px;
+
+  padding: 20px 0px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.rmdb-logo {
+  width: 200px;
+  margin-top: 20px;
+  float: left;
+}
