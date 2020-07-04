@@ -4,7 +4,14 @@ import "./LoadMoreBtn.css";
 function LoadMoreBtn(props) {
   return (
     <div>
-      <h1>LoadMore </h1>
+      <div className="buttton">
+        <button
+          onClick={props.onClick}
+          className="load-btn justify-content-center"
+        >
+          Load More{" "}
+        </button>
+      </div>
     </div>
   );
 }

@@ -1,0 +1,20 @@
+.buttton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.load-btn {
+  font-size: 25px;
+
+  background-color: #2f2f35;
+  color: white;
+  border-radius: 6px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.load-btn:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}

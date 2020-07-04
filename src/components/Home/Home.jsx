@@ -61,7 +61,7 @@ class Home extends Component {
         this.state.currentPage + 1
       }`;
     } else {
-      endpoint = `${apiUrl}search/movie?api_key=${apiKey}&language=en-US&query${
+      endpoint = `${apiUrl}search/movie?api_key=${apiKey}&language=en-US&query=${
         this.state.searchTerm
       }&page=${this.state.currentPage + 1}`;
     }
@@ -97,8 +97,17 @@ class Home extends Component {
         ) : null}
 
         <MoviesGrid />
-        <Spinner />
-        <LoadMoreBtn />
+        <MovieThumbnail
+          header={this.state.searchTerm ? "Search Result" : "Popular Movies "}
+          movies={this.state.movies}
+          loading={this.state.loading}
+        />
+        {this.state.loading ? <Spinner /> : null}
+
+        {this.state.currentPage <= this.state.totalPages &&
+        !this.state.loading ? (
+          <LoadMoreBtn onClick={this.loadMoreItems} />
+        ) : null}
       </div>
     );
   }

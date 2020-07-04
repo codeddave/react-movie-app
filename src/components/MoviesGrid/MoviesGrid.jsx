@@ -1,10 +1,12 @@
 import React from "react";
 import "./MoviesGrid.css";
+import { useState, useEffect } from "react";
 
 function MoviesGrid(props) {
   return (
-    <div>
-      <h1>MoviesGrid</h1>
+    <div className="rmdb-grid">
+      {props.header && !props.loading ? <h1> {props.header}</h1> : null}
+      <div className="rmdb-grid-content"></div>
     </div>
   );
 }
