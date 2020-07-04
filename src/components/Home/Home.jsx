@@ -6,13 +6,7 @@ import MovieThumbnail from "../MovieThumbnail/MovieThumbnail";
 import LoadMoreBtn from "../LoadMoreBtn/LoadMoreBtn";
 import Spinner from "../Spinner/Spinner";
 import axios from "axios";
-import {
-  apiUrl,
-  apiKey,
-  imageBaseUrl,
-  backdropSize,
-  posterSize,
-} from "../../api";
+import { apiUrl, apiKey, imageBaseUrl, backdropSize } from "../../api";
 
 import "./Home.css";
 

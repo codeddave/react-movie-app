@@ -1,12 +1,6 @@
 import React from "react";
 import "./MovieThumbnail.css";
-import {
-  apiUrl,
-  apiKey,
-  imageBaseUrl,
-  backdropSize,
-  posterSize,
-} from "../../api/index";
+import { imageBaseUrl, posterSize } from "../../api/index";
 
 function MovieThumbnail(props) {
   return (
@@ -26,7 +20,7 @@ function MovieThumbnail(props) {
                   ? `${imageBaseUrl}${posterSize}/${movie.poster_path}`
                   : "./images/no_image.jpg"
               }
-              alt="Card image cap"
+              alt="loading"
               style={{ height: "100%" }}
             />
           </div>

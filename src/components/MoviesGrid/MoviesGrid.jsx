@@ -1,6 +1,5 @@
 import React from "react";
 import "./MoviesGrid.css";
-import { useState, useEffect } from "react";
 
 function MoviesGrid(props) {
   return (
