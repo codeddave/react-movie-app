@@ -36,7 +36,9 @@
     height: 500px;
     margin-left: 1.3rem;
   }
-
+  .info-text {
+    margin-left: 20px;
+  }
   .info-text p {
     font-size: 14px;
   }

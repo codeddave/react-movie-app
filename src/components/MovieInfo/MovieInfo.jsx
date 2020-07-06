@@ -26,7 +26,7 @@ function MovieInfo(props) {
               alt=""
             />
           </div>
-          <div className=" col-12 col-sm-6 col-lg-8 info-text">
+          <div className=" col-11 col-sm-6 col-lg-8 info-text">
             <h1>{props.movie.title}</h1>
             <h3>PLOT</h3>
             <p>{props.movie.overview}</p>
