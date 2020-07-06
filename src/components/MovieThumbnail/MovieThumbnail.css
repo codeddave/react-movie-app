@@ -1,0 +1,11 @@
+.movie-card {
+  width: 24rem;
+  height: 32rem;
+}
+
+@media screen and (max-width: 768px) {
+  .movie-card {
+    width: 18rem;
+    height: 18rem;
+  }
+}

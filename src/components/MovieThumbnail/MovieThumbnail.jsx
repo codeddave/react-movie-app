@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./MovieThumbnail.css";
 import { imageBaseUrl, posterSize } from "../../api/index";
-
+import "./MovieThumbnail.css";
 function MovieThumbnail(props) {
   return (
     <div>
@@ -16,13 +16,9 @@ function MovieThumbnail(props) {
             }}
             key={i}
           >
-            <div
-              key={i}
-              className="card mb-4 ml-4 mt-4"
-              style={{ width: "24rem", height: "32rem" }}
-            >
+            <div key={i} className="card movie-card mb-4 ml-4 mt-4">
               <img
-                className="card-img-top img-responsive "
+                className="card-img-top movie-image img-responsive "
                 src={
                   movie.poster_path
                     ? `${imageBaseUrl}${posterSize}/${movie.poster_path}`
