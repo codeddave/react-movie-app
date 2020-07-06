@@ -1,0 +1,27 @@
+.actor-wrap {
+}
+.actor-image {
+  width: 154px !important;
+  height: 12rem;
+}
+
+.actor-row {
+  margin-left: 130px;
+}
+.actor-general {
+  display: flex;
+  justify-content: space-between;
+  background-color: #414145;
+}
+
+.character {
+  padding: 10px;
+  width: 8rem;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .actor-row {
+    margin: auto;
+  }
+}

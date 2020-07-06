@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap");
+
 .header {
   width: 100%;
   height: auto;
@@ -14,6 +16,15 @@
   margin: 0 auto;
   box-sizing: border-box;
   overflow: hidden;
+}
+.movie-den-logo {
+  color: white;
+  font-family: "Cinzel Decorative", cursive;
+
+  font-size: 25px;
+}
+.movie-den-logo:hover {
+  color: white;
 }
 
 .rmdb-logo {

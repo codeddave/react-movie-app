@@ -1,0 +1,49 @@
+.movie-background {
+  display: flex;
+  justify-content: center;
+  background-size: cover !important;
+  width: 100%;
+  height: 600px;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+/*.info-content img 
+{
+  width: 200px;
+}*/
+.info-content {
+  background: rgb(0, 0, 0, 0.7);
+}
+
+.movie-info-image {
+  padding: 10px;
+  width: 350px;
+  height: 100%;
+}
+.info-text {
+  color: white;
+}
+@media screen and (max-width: 768px) {
+  .movie-background {
+    padding: 10px 5px;
+    height: 100%;
+  }
+  .image-wrap {
+    margin-right: 6px;
+  }
+
+  .movie-info-image {
+    height: 500px;
+    margin-left: 1.3rem;
+  }
+
+  .info-text p {
+    font-size: 14px;
+  }
+  .info-text h1 {
+    font-size: 30px;
+  }
+  .info-text h3 {
+    font-size: 17px;
+  }
+}

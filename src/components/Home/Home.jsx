@@ -95,6 +95,8 @@ class Home extends Component {
           header={this.state.searchTerm ? "Search Result" : "Popular Movies "}
           movies={this.state.movies}
           loading={this.state.loading}
+          movieId={this.state.movies.id}
+          movieName={this.state.movies.original_title}
         />
         {this.state.loading ? <Spinner /> : null}
 

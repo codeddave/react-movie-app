@@ -13,7 +13,6 @@ function Hero(props) {
           url('${props.image}'), #1c1c1c`,
       }}
     >
-      HeroImage
       <div className="rmdb-heroimage-content">
         <div className="rmdb-heroimage-text">
           <h1>{props.title}</h1>
