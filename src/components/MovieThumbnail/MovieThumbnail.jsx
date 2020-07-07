@@ -2,11 +2,15 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./MovieThumbnail.css";
 import { imageBaseUrl, posterSize } from "../../api/index";
+import PropTypes from "prop-types";
+
 import "./MovieThumbnail.css";
 function MovieThumbnail(props) {
   return (
     <div>
-      {props.header && !props.loading ? <h1> {props.header}</h1> : null}
+      {props.header && !props.loading ? (
+        <h1 className="header-title text-center mt-4"> {props.header}</h1>
+      ) : null}
       <div className="row justify-content-center">
         {props.movies.map((movie, i) => (
           <Link
@@ -34,5 +38,8 @@ function MovieThumbnail(props) {
     </div>
   );
 }
+MovieThumbnail.propTypes = {
+  header: PropTypes.string,
+  movies: PropTypes.array,
+};
 export default MovieThumbnail;
-//</div><img src={`${imageBaseUrl}${posterSize}/${movie.poster_path}`} />

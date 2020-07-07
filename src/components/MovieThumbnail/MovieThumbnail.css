@@ -8,4 +8,11 @@
     width: 18rem;
     height: 18rem;
   }
+  .header-title {
+    font-size: 24px;
+    margin-top: 8px !important;
+  }
+  .movie-card {
+    margin-top: 3px !important;
+  }
 }

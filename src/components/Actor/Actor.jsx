@@ -1,11 +1,14 @@
 import React from "react";
 import { imageBaseUrl } from "../../api";
+import PropTypes from "prop-types";
+
 import "./Actor.css";
 
 function Actor(props) {
   const posterSize = "w154";
   return (
     <div>
+      {/*<h4 className="text-center"> Cast </h4>*/}
       <div className="row actor-row">
         {props.actors.map((actor, i) => (
           <div className="actor-general mb-4 ml-4" key={i}>
@@ -30,4 +33,7 @@ function Actor(props) {
     </div>
   );
 }
+Actor.propTypes = {
+  actors: PropTypes.array,
+};
 export default Actor;

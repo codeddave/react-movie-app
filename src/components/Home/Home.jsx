@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Hero from "../Hero/Hero";
 import SearchBar from "../SearchBar/SearchBar";
-import MoviesGrid from "../MoviesGrid/MoviesGrid";
+
 import MovieThumbnail from "../MovieThumbnail/MovieThumbnail";
 import LoadMoreBtn from "../LoadMoreBtn/LoadMoreBtn";
 import Spinner from "../Spinner/Spinner";
@@ -66,10 +66,10 @@ class Home extends Component {
     const res = await axios.get(endpoint);
 
     const response = res.data;
-    console.log(response);
+
     this.setState({
       movies: [...this.state.movies, ...response.results],
-      heroImage: this.state.heroImage || response.results[3],
+      heroImage: this.state.heroImage || response.results[0],
       loading: false,
       currentPage: response.page,
       totalPages: response.total_pages,
@@ -90,7 +90,6 @@ class Home extends Component {
           </div>
         ) : null}
 
-        <MoviesGrid />
         <MovieThumbnail
           header={this.state.searchTerm ? "Search Result" : "Popular Movies "}
           movies={this.state.movies}

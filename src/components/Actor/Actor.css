@@ -1,12 +1,10 @@
-.actor-wrap {
-}
 .actor-image {
   width: 154px !important;
   height: 12rem;
 }
 
 .actor-row {
-  margin-left: 130px;
+  margin-left: 50px;
 }
 .actor-general {
   display: flex;
@@ -22,6 +20,6 @@
 
 @media screen and (max-width: 768px) {
   .actor-row {
-    margin-left: 40px;
+    margin-left: 32px;
   }
 }

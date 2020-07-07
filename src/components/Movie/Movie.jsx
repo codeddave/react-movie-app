@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { apiUrl, apiKey } from "../../api";
-import Navigation from "../Navigation/Navigation";
+
 import MovieInfo from "../MovieInfo/MovieInfo";
 import MovieInfoBar from "../MovieInfoBar/MovieInfoBar";
 import Actor from "../Actor/Actor";
@@ -26,7 +26,6 @@ class Movie extends Component {
   fetchItems = async (endpoint) => {
     const res = await axios.get(endpoint);
     const response = res.data;
-    console.log(response);
 
     if (response.status_code) {
       this.setState({
@@ -40,7 +39,6 @@ class Movie extends Component {
         try {
           const res = await axios.get(endpoint);
           const response = res.data;
-          console.log(response);
 
           const directors = response.crew.filter(
             (member) => member.job === "Director"
@@ -63,7 +61,6 @@ class Movie extends Component {
       <div>
         {this.state.movie ? (
           <div>
-            <Navigation movie={this.props.location.movieName} />
             <MovieInfo
               movie={this.state.movie}
               directors={this.state.directors}
